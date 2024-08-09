@@ -1,0 +1,391 @@
+.dashboard-main-div{
+  background-color: #1e4771;
+  width: 100%;
+  margin-top: -2px;
+}
+.dashmain-div{
+  margin-top: -5px;
+    margin-left: 70px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:20px;
+
+}
+.dashhead{
+  margin-left: 75px;
+}
+
+.first-div{
+    border: 2px solid rgb(213, 203, 203);
+    width: 97%;
+    padding-left: 20px;
+    border-radius: 15px;
+    margin-left: 10px;
+    background-color:  white;
+}
+
+.resever-div{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: large;
+    padding-bottom: 5px;
+    
+}
+ .rdiv{
+    border: 2px solid rgb(213, 203, 203);
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    margin-right: 10px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.rdiv p{
+  font-size: 1em;
+  color: #1e4873;
+}
+
+
+.table-container {
+    margin: 7px ;
+    width: 100%;
+    overflow-x: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    margin-left: 10px;
+  }
+  
+  .dtable {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .tablerow th {
+    background-color: #294b73;
+    color: white;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  .trow td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .trow:hover {
+    background-color: #f1f1f1;
+  }
+  .trowb{
+     border: none;
+     border-radius: 50%;
+     background-color: #1e4873;
+  }
+  .trowb:hover{
+    color: black;
+    background-color: rgb(93, 161, 219);
+  }
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 7px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #4c6c8b;
+  }
+  
+  .pagination button.active {
+    background-color: #394959;
+  }
+  
+  .pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination button:first-child, .pagination button:last-child {
+    border-radius: 5px;
+    width: auto;
+    padding: 10px 15px;
+  }
+  .calender-container{
+    background-color: whitesmoke;
+    box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .calender-div{
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-bottom: 5px;
+    
+  }
+  
+  .custom-calendar {
+    border-radius: 10px;
+  }
+  
+  .custom-calendar .react-datepicker__triangle {
+    display: none; /* Hide the triangle if you want */
+  }
+  
+  .custom-calendar .react-datepicker__header {
+    background-color: #f0f0f0; /* Header background color */
+    padding: 1em; /* Increase header padding */
+  }
+  
+  .custom-calendar .react-datepicker__day {
+    width: 2.3em; /* Increase day cell width */
+    height: 1.2em; /* Increase day cell height */
+    line-height: 1.5em; /* Align text vertically */
+    font-size: 1em;
+  }
+  
+  .custom-calendar .react-datepicker__day--selected {
+    background-color: #007bff; /* Background color for selected day */
+    color: #fff; /* Text color for selected day */
+  }
+  
+  .custom-calendar .react-datepicker__day--in-range {
+    background-color: #e9ecef; /* Background color for in-range days */
+  }
+  
+  .custom-calendar .react-datepicker__month {
+    padding: 1em; /* Increase month padding */
+  }
+  
+  /* .custom-calendar .react-datepicker__week {
+    margin: 0.5em 0; /* Increase spacing between weeks 
+  } */
+  .events-container{
+    max-height: 180px; 
+    overflow-y: auto;  
+    border: none; 
+  }
+  .events{
+    border: 1px solid rgb(182, 179, 179);
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.1);
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .p1{
+       color: gray;
+       font-size: medium;
+       font-weight: bold;
+       padding-left: 5px;
+  }
+  .p2{
+    color:#1e4873;
+    font-size: 2em;
+    padding-left: 20px;
+    font-weight: bold;
+  }
+  .eve{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -30px;
+  }
+  .p3{
+    color: gray;
+    font-weight: bold;
+    padding-right: 35px;
+  }
+  .p4{
+    color:#1e4873;
+    padding-right: 35px;
+    font-weight:bolder;
+    font-size: 1.2em;
+  }
+
+  /* For mobile devices (up to 768px width) */
+@media (max-width: 760px) {
+  .dashboard-main-div {
+    background-color: #d6eafe;
+    width: 100%;
+  }
+  .dashmain-div {
+    margin-top: -5px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .dashhead {
+    margin-left: 0;
+    text-align: center;
+  }
+  .first-div {
+    width: 70%;
+    margin-left: 80px;
+    padding: 0 10px;
+  }
+  .resever-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: medium;
+  }
+  .rdiv {
+    width: 90%;
+    margin-right: 0;
+  }
+  .table-container {
+    margin: 7px 0;
+    width: 80%;
+    margin-left: 70px;
+    overflow-x: auto;
+  }
+  .calender-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .calender-container{
+    padding-left: 60px;
+  }
+  
+  .events-container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    /* margin-left: 60px; */
+  }
+  .custom-calendar .react-datepicker__day {
+    width: 2.3em; /* Increase day cell width */
+    height: 1.1em; /* Increase day cell height */
+    line-height: 1.4em; /* Align text vertically */
+    font-size: 1em;
+  }
+}
+
+/* For tablets (769px to 1024px width) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .dashboard-main-div {
+    background-color: #d6eafe;
+  }
+  .dashmain-div {
+    margin-top: -5px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .dashhead {
+    margin-left: 0;
+    text-align: center;
+  }
+  .first-div {
+    width: 85%;
+    margin-left: 0;
+    padding: 0 10px;
+    margin-left: 90px;
+  }
+  .resever-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: medium;
+  }
+  .rdiv {
+    width: 80%;
+    margin-right: 0;
+  }
+  .table-container {
+    margin: 7px 0;
+    width: 88%;
+    overflow-x: auto;
+    margin-left: 90px;
+    margin-top: 20px;
+  }
+  .calender-container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 110px;
+  }
+  .calender-div{
+    padding-left: 150px;
+  }
+  .events-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .events{
+    width: 80%;
+    margin-left: 70px;
+  }
+}
+
+/* For larger tablets (1025px to 1366px width) */
+/* @media (min-width: 1025px) and (max-width: 1366px) {
+  .dashboard-main-div {
+    background-color: #d6eafe;
+  }
+  .dashmain-div {
+    margin-top: -5px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .dashhead {
+    margin-left: 0;
+    text-align: center;
+  }
+  .first-div {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+  .resever-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: medium;
+  }
+  .rdiv {
+    width: 70%;
+    margin-right: 0;
+  }
+  .table-container {
+    margin: 7px 0;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .paymain-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+
+   */

@@ -1,0 +1,60 @@
+.signup-body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("hotell.jpg");
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 300px;
+}
+
+.signup-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.inputt {
+    margin-bottom: 10px;  /* Reduced gap between input fields */
+}
+
+.labe {
+    margin-bottom: 5px;  /* Reduced gap between label and input */
+    display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 2px;  /* Reduced gap between label and input */
+    box-sizing: border-box;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .signup-container {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .labe, input[type="text"], input[type="password"], .Button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,175 @@
+.settings-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  margin-left: 70px;
+}
+
+.setting-card {
+  background: linear-gradient(135deg, #3686dca4, #273e56);
+  border-radius: 8px;
+  padding: 10px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+}
+
+.setting-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.setting-card p {
+  font-size: 16px;
+}
+
+.setting-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-setting {
+  background-color: #e0f7fa;
+}
+
+.booking-setting {
+  background-color: #ffe0b2;
+}
+
+.settings {
+  padding-left: 100px;
+}
+
+.signup-containers {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;  /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin-left: 500px;
+}
+
+.signup-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.inputt {
+  margin-bottom: 10px;  /* Reduced gap between input fields */
+}
+
+.labe {
+  margin-bottom: 5px;  /* Reduced gap between label and input */
+  display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 2px;  /* Reduced gap between label and input */
+  box-sizing: border-box;
+}
+
+.Button1 {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #273e56, #3b8ae0a4);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Button1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .settings-container {
+      margin-left: 50px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .signup-containers {
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .settings-container {
+      margin-left: 80px;
+  }
+
+  .signup-containers {
+      width: 80%;
+      padding-left: 80px;
+      margin-right: auto;
+  }
+
+  .setting-card {
+      width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .settings-container {
+      margin-left: 80px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .signup-containers {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .setting-card {
+      width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .settings-container {
+      margin-left: 75px;
+      flex-direction: column;
+      align-items: center;
+      /* margin: 5px; */
+
+  }
+
+  .signup-containers {
+      width: 70%;
+      padding: 15px;
+      margin-left: 75px;
+      margin-right: 10px;
+      /* margin: 5px; */
+  }
+
+  .setting-card {
+      width: 100%;
+      padding: 8px;
+  }
+
+  .setting-card h2 {
+      font-size: 20px;
+  }
+
+  .setting-card p {
+      font-size: 14px;
+  }
+
+  .Button1 {
+      padding: 12px;
+      font-size: 14px;
+  }
+}

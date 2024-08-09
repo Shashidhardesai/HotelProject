@@ -1,0 +1,104 @@
+/* Homepage CSS */
+
+.homepage-body {
+    font-family: Arial, sans-serif;
+    background-image: url("hotell.jpg");
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.homepage-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.homepage-container h1 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.hcontainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.login {
+    background-color: #007bff;
+    color: white;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.signup {
+    background-color: #28a745;
+    color: white;
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .homepage-container {
+        padding: 30px;
+    }
+
+    .homepage-container h1 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .homepage-container {
+        padding: 20px;
+    }
+
+    .homepage-container h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}
